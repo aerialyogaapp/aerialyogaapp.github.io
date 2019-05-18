@@ -311,6 +311,7 @@ var growSnake = function(snake) {
 var ate = function(snake, otherThing) {
   var head = snake[0];
   return CHUNK.detectCollisionBetween([head], otherThing);
+}
 
 var advanceGame = function() {
   var newSnake = moveSnake(snake);
